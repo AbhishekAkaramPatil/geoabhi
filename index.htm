@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<title>Geo</title>
+
+<script>
+function revealAnswer(){
+var x = document.getElementById("xValue").value;
+var y = document.getElementById("yValue").value;
+var z = x*y;
+document.getElementById("areaToUpdate").innerHTML = z;
+}
+function hideAnswer() {
+document.getElementById("areaToUpdate").innerHTML = "";
+}
+
+</script>
+
+</head>
+
+
+<body>
+<h1>My Web</h1>
+<p> Hello
+<p>
+<hr/>
+<p> here is my img </p>
+<img src = "Alps.png" width = "250" />
+<a href="form.html">Here's a link</a>
+<p> 
+Click here to show the answer of numbers multiply = 
+<div id = "areaToUpdate"> </div> </br>
+
+<button onClick="revealAnswer();"> Reveal Ans </button></br>
+<button onClick="hideAnswer();"> Hide Ans </button></br>
+  <hr/>
+  <p> Enter values for x and y and press button </p>
+  x: <input type="text" id ="xValue">
+  y: <input type="text" id ="yValue">
+
+
+
+
+
+
+
+</body>
+</html>
